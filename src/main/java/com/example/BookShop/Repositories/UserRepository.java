@@ -1,6 +1,5 @@
 package com.example.BookShop.Repositories;
 
-import com.example.BookShop.Entities.Dto.UserDto;
 import com.example.BookShop.Entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 

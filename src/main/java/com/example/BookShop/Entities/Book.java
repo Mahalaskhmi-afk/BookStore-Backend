@@ -5,15 +5,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Lob;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Date;
+import java.util.Date;
+
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Book {
 
     @Id
@@ -34,7 +37,7 @@ public class Book {
     private String description;
 
     @Lob
-    @Column(name = "image", columnDefinition = "LONGBLOB")
+    @Column(length = 1000000)
     private byte[] image;
 
     private Date date;

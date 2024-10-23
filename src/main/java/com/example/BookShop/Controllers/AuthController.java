@@ -24,7 +24,7 @@ import java.util.concurrent.ExecutionException;
 @RestController
 public class AuthController {
 
-    @Autowired
+    @Autowired  
     private UserRepository userRepository;
 
     @Autowired
